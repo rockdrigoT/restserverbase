@@ -63,6 +63,7 @@ const usuariosPatch = (req, res = response) => {
 
 const usuariosDelete = async(req, res = response) => {
     const {id} = req.params;
+    const uid = req.uid;
     //borrado físico de la tabla
     //const usuario = await Usuario.findByIdAndDelete(id);
 
